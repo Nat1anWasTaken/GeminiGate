@@ -1,14 +1,12 @@
-mod routes;
-
 use std::env;
 
-use axum::{Json, Router};
-use axum::http::HeaderMap;
+use axum::Router;
 use axum::routing::{get, post};
 use dotenv::dotenv;
-use maplit::hashmap;
 use serde::Deserialize;
 use tokio::net::TcpListener;
+
+mod routes;
 
 #[tokio::main]
 async fn main() {
