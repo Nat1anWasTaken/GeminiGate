@@ -1,0 +1,12 @@
+[package]
+name = "gemini_gate"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = "0.7.5"
+dotenv = "0.15.0"
+tokio = { version = "1.37.0", features = ["rt-multi-thread"] }
+serde = { version = "1.0.197", features = ["derive"] }
+tracing-subscriber = "0.3.18"
+maplit = "1.0.2"
